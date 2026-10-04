@@ -1,0 +1,16 @@
+.DS_Store
+*.swp
+*.swo
+*~
+*.save
+.env
+.env.*
+.ssh/
+.zsh_history
+.zsh_sessions/
+.zcompdump*
+.zsh_plugins.zsh
+*.log
+automatic_backups/
+auth.json
+credentials.json

@@ -1,0 +1,43 @@
+# My Powerlevel10k layout overrides.
+# Catppuccin controls the colors.
+
+typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  os_icon
+  dir
+  vcs
+  newline
+  prompt_char
+)
+
+typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  status
+  command_execution_time
+  background_jobs
+  time
+  newline
+)
+
+typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
+typeset -g POWERLEVEL9K_TIME_UPDATE_ON_COMMAND=false
+
+typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
+typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='╭─'
+typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='├─'
+typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='╰─'
+
+typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX='─╮'
+typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX='─┤'
+typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX='─╯'
+
+typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR='·'
+typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=240
+
+typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
+typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=0
+typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FORMAT='d h m s'
+
+typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
+
+(( ! $+functions[p10k] )) || p10k reload

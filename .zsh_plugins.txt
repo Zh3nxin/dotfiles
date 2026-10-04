@@ -1,0 +1,2 @@
+romkatv/powerlevel10k
+tolkonepiu/catppuccin-powerlevel10k-themes
